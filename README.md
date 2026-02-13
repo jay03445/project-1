@@ -1,6 +1,10 @@
-This is the JWSK server:
-This is how you run it in PowerShell terminal:
+This is a restful JWKS server that will generate public keys with identifiers called kids for the verification of JSON Web Tokens. For testing key rotation, JWTs will test for users' inputs for expired key tokens when the expired query parameter is defined. 
+Files include: 
+server.py
+test_server.py
+requirements.txt
+Running the Server in PowerShell Terminal: 
 python server.py
 python -m pytest --cov=app --cov=tests
-This is how you run it in Gradebot's second terminal:
+Running the Gradebot in a Second Powersheel Terminal:
 .\gradebot.exe project-1 --run="python server.py"
