@@ -1,4 +1,4 @@
-This is a restful JWKS server that will generate public keys with identifiers called kids for the verification of JSON Web Tokens. For testing key rotation, JWTs will test for users' inputs for expired key tokens when the expired query parameter is defined. 
+This is a restful JWKS server that will generate public keys with identifiers called "kid" for the verification of JSON Web Tokens. For testing key rotation, JWTs will test for users' inputs for expired key tokens when the expired query parameter is defined. 
 Files include: 
 server.py
 test_server.py
