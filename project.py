@@ -82,7 +82,8 @@ def main() -> None:
             key = parts[1]
             value = parts[2]
             store.set(key, value)
-  elif cmd == "GET" and len(parts) >= 2:
+
+        elif cmd == "GET" and len(parts) >= 2:
             key = parts[1]
             value = store.get(key)
 
@@ -94,3 +95,9 @@ def main() -> None:
 
         elif cmd == "EXIT":
             break
+
+    store.close()
+
+
+if __name__ == "__main__":
+    main()
